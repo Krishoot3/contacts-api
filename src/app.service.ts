@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { IMessage } from './contacts/interfaces/message.interface';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getHello(): IMessage  {
+    return {message: 'Hello World!'};
   }
 }
