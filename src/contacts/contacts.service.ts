@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { contactsData, findContact } from 'src/helpers/helpers';
 import { IContacts } from './interfaces/contacts.interface';
 import { IMessage } from './interfaces/message.interface';
+import { contactsData, findContact } from '../helpers/helpers'
 
 @Injectable()
 export class ContactsService {
